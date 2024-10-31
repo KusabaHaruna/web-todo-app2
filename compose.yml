@@ -31,6 +31,6 @@ services:
     depends_on:
       - postgres
     ports:
-      - 8888:80
+      - 8889:80  #ポート競合が起きたので、8888:80 -->> 8889:80に変更
 volumes:
   postgresql:
